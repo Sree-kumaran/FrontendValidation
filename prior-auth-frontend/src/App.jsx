@@ -20,60 +20,30 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Dashboard />} />
 
-          <Route
-            path="new-authorization"
-            element={<NewAuthorization />}
-          />
+          <Route path="new-authorization" element={<NewAuthorization />} />
 
-          <Route
-            path="requests"
-            element={<Requests />}
-          />
+          <Route path="requests" element={<Requests />} />
 
-          <Route
-            path="nurse-review"
-            element={<NurseReview />}
-          />
+          <Route path="nurse-review" element={<NurseReview />} />
 
-          <Route
-            path="policies"
-            element={<Policies />}
-          />
+          <Route path="policies" element={<Policies />} />
 
-          <Route
-            path="audit-trail"
-            element={<AuditTrail />}
-          />
+          <Route path="audit-trail" element={<AuditTrail />} />
 
-          <Route
-            path="extraction-result"
-            element={<ExtractionResult />}
-          />
+          <Route path="extraction-result" element={<ExtractionResult />} />
 
-          <Route
-            path="policy-evaluation"
-            element={<PolicyEvaluation />}
-          />
+          <Route path="policy-evaluation" element={<PolicyEvaluation />} />
 
-          <Route
-            path="decision"
-            element={<Decision />}
-          />
+          <Route path="decision" element={<Decision />} />
 
-          <Route
-            path="decision-trace"
-            element={<DecisionTrace />}
-          />
+          <Route path="decision-trace" element={<DecisionTrace />} />
 
           {/* STAGE 11 */}
+          <Route path="provider-response" element={<ProviderResponse />} />
           <Route
-            path="provider-response"
-            element={<ProviderResponse />}
+            path="post-submission-review"
+            element={<PostSubmissionReview />}
           />
-          <Route
-  path="post-submission-review"
-  element={<PostSubmissionReview />}
-/>
         </Route>
       </Routes>
     </BrowserRouter>
